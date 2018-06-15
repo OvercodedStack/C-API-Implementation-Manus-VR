@@ -1,0 +1,16 @@
+﻿  ManusCRPI.cpp
+  Source.cpp
+  Generating Code...
+ManusCRPI.obj : error LNK2019: unresolved external symbol __imp__ManusInit referenced in function "public: __thiscall Sensor::ManusGloves::ManusGloves(void)" (??0ManusGloves@Sensor@@QAE@XZ)
+Source.obj : error LNK2001: unresolved external symbol __imp__ManusInit
+ManusCRPI.obj : error LNK2019: unresolved external symbol __imp__ManusExit referenced in function "public: __thiscall Sensor::ManusGloves::~ManusGloves(void)" (??1ManusGloves@Sensor@@QAE@XZ)
+Source.obj : error LNK2001: unresolved external symbol __imp__ManusExit
+ManusCRPI.obj : error LNK2019: unresolved external symbol __imp__ManusSetVibration referenced in function "public: bool __thiscall Sensor::ManusGloves::SendVibration(unsigned short,float,int)" (?SendVibration@ManusGloves@Sensor@@QAE_NGMH@Z)
+Source.obj : error LNK2001: unresolved external symbol __imp__ManusSetVibration
+ManusCRPI.obj : error LNK2019: unresolved external symbol __imp__ManusIsConnected referenced in function "public: bool __thiscall Sensor::ManusGloves::GetHand(struct manus_hand_t *,int)" (?GetHand@ManusGloves@Sensor@@QAE_NPAUmanus_hand_t@@H@Z)
+Source.obj : error LNK2001: unresolved external symbol __imp__ManusIsConnected
+ManusCRPI.obj : error LNK2019: unresolved external symbol __imp__ManusGetHand referenced in function "public: bool __thiscall Sensor::ManusGloves::GetHand(struct manus_hand_t *,int)" (?GetHand@ManusGloves@Sensor@@QAE_NPAUmanus_hand_t@@H@Z)
+Source.obj : error LNK2001: unresolved external symbol __imp__ManusGetHand
+ManusCRPI.obj : error LNK2019: unresolved external symbol __imp__ManusGetHandRaw referenced in function "public: bool __thiscall Sensor::ManusGloves::GetRawHand(struct manus_hand_raw_t *,int)" (?GetRawHand@ManusGloves@Sensor@@QAE_NPAUmanus_hand_raw_t@@H@Z)
+Source.obj : error LNK2001: unresolved external symbol __imp__ManusGetHandRaw
+C:\Manus-master\Manus-master\Glove_test\Debug\Manus-Perception.exe : fatal error LNK1120: 6 unresolved externals
