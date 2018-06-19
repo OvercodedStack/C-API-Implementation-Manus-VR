@@ -85,6 +85,7 @@ namespace manus_interface {
 		//Hand function to set the profile characteristics of the arm. 
 		my_hand->set_lenghts_arm(my_profile->shoulderLength, my_profile->upperArmLength, my_profile->upperNeckLength, my_profile->lowerArmLength,
 			my_profile->lowerNeckLength, process_vector(my_profile->upperNeckOffset));
+		
 	}
 
 

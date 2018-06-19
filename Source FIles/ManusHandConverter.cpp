@@ -166,11 +166,11 @@ int main() {
 		interpreter.add_manus_hand(leftpt, leftrpt, GLOVE_LEFT, left_armp, profileL);
 		interpreter.add_manus_hand(rightpt, rightrpt, GLOVE_RIGHT, right_armp, profileR);
 		//print_my_raw_hand(interpreter.get_hand(GLOVE_LEFT));
-		//print_my_hand(interpreter.get_hand(GLOVE_LEFT));
+		print_my_hand(interpreter.get_hand(GLOVE_LEFT));
 		//print_my_manus_profile_hand(interpreter.get_hand(GLOVE_LEFT));
-		uint16_t i = 200;
-		interpreter.rumble_my_hand(GLOVE_LEFT, .75, i);
-		print_arm(interpreter.get_hand(GLOVE_LEFT));
+		//uint16_t i = 200;
+		//interpreter.rumble_my_hand(GLOVE_LEFT, .75, i);
+		//print_arm(interpreter.get_hand(GLOVE_LEFT));
 		//cout << "Press a key." << endl;
 		//cin >> inp;
 		//timer.
