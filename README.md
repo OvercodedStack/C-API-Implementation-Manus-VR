@@ -32,7 +32,7 @@ This API was OOP designed with the use of the header-only SDK provided by Manus.
 In addition, there is a previous implementation by Megan Zimmerman that utilized the SDK previously. 
 
 
-## Aknowledgements
+## Acknowledgements
 
 - Megan Zimmerman for providing the initial code
 - Manus VR
