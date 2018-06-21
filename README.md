@@ -17,7 +17,7 @@ Load the solution file for the program. Compile the program with your required n
 
 **Note**: The ManusVR Folder has to be located within the program's properties if you have it or localted in a folder next to the source files. Ex: 
 
-//(C++ API/Source   
+//(C++ API)/Source   
 **//Libs/Manus**
 
 ## Use 
