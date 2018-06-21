@@ -11,6 +11,15 @@ what the Manus VR SDK provides at present (Manus VR SDK in use: v1.1.1). The API
 Manus VR SDK V1.1.1  
 Visual Studio 2017 or C++ compatible IDE
 
+## Quick Start
+
+Load the solution file for the program. Compile the program with your required needs and then run as needed. 
+
+**Note**: The ManusVR Folder has to be located within the program's properties if you have it or localted in a folder next to the source files. Ex: 
+
+//(C++ API/Source
+**//Libs/Manus**
+
 ## Use 
 This API was OOP designed with the use of the header-only SDK provided by Manus. The program is split into 4 header and implementation files as stated below: 
 
