@@ -25,7 +25,7 @@ namespace manus_interface {
 	//######################################################################################################################################
 	//Class to phrase the data on a manus device hand.
 
-
+	//Constructor
 	Manus_interpreter::Manus_interpreter(manus_session_t* robot_session) {
 		session = robot_session;
 	}
@@ -87,8 +87,6 @@ namespace manus_interface {
 			my_profile->lowerNeckLength, process_vector(my_profile->upperNeckOffset));
 		
 	}
-
-
 
 	//Add the finger calculations from the Manus API
 	void Manus_interpreter::add_hand_fingers(manus_hand_t* device, device_type_t side, Manus_hand_obj* manus_hand) {
@@ -224,6 +222,8 @@ namespace manus_interface {
 		manus_hand->add_vector_fingers(single_hand_array);
 	}
 
+
+	//Utillity methods used to compile ManusVR data into vector and quaternion struts. 
 	vector_manus Manus_interpreter::process_vector(vector_t vect) {
 		vector_manus vec_out;
 		vec_out.x = vect.x;
@@ -241,6 +241,9 @@ namespace manus_interface {
 		return quat_out;
 	}
 
+
+	//This was a misinterpretation of the Manus Profile data, collected under the assumption that it provides realtime data.
+	//It does not provide real-time data
 	void Manus_interpreter::add_manus_profile_hands(ik_profile_t* my_profile, Manus_hand_obj* my_hand) {
 		vector<double> temporary_finger_array; //Temporary array for doubles to insert into finger.
 		vector<Finger> fingers;
@@ -298,15 +301,8 @@ namespace manus_interface {
 	//Phrase the array of raw finger calculations from the Manus SDK.
 	void Manus_interpreter::add_hand_fingers_raw(manus_hand_raw_t* hand, device_type_t side, Manus_hand_obj* manus_hand) {
 		vector<double> single_hand_array_raw;
-		if (side = GLOVE_LEFT) {
-			for (int h = 0; h < 5; h++) {
-				single_hand_array_raw.push_back(hand->finger_sensor[h]);
-			}
-		}
-		else {
-			for (int h = 5; h < 10; h++) {
-				single_hand_array_raw.push_back(hand->finger_sensor[h]);
-			}
+		for (int h = 0; h < 10; h++) {
+			single_hand_array_raw.push_back(hand->finger_sensor[h]);
 		}
 		manus_hand->set_hand_raw(single_hand_array_raw);
 	}
