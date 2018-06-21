@@ -15,7 +15,7 @@ Visual Studio 2017 or C++ compatible IDE
 
 Load the solution file for the program. Compile the program with your required needs and then run as needed. 
 
-**Note**: The ManusVR Folder has to be located within the program's properties if you have it or localted in a folder next to the source files. Ex: 
+**Note**: The ManusVR SDK library folder has to be located within the program's properties if you have it or localted in a folder next to the source files. Ex: 
 
 //(C++ API)/Source   
 **//Libs/Manus**
