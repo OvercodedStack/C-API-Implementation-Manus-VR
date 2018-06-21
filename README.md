@@ -8,7 +8,7 @@ what the Manus VR SDK provides at present (Manus VR SDK in use: v1.1.1). The API
 
 ## Requirements:
 
-Manus VR SDK V1.1.1
+Manus VR SDK V1.1.1  
 Visual Studio 2017 or C++ compatible IDE
 
 ## Use 
